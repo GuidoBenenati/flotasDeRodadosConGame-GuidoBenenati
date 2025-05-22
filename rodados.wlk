@@ -1,4 +1,4 @@
-object corsa{
+class CORSA{
 
      var property color ="Azul"
 
@@ -8,31 +8,20 @@ object corsa{
      method velocidadMaxima() =  150
      method peso() =  1300
 }
-object kwid{
+class KWID{
 
      var property tanque =false
 
 
 
      method color() ="Azul"
-     method capacidad() {  if (self.tanque()){return 3} else{return 4}  }
-     method velocidadMaxima() {  if (self.tanque()){return 3} else{return 120}  }
-     method peso() {  if (self.tanque()){return 1350} else{return 1200}  }
+     method capacidad() = if (self.tanque()) 3 else 4
+     method velocidadMaxima() =  if (self.tanque())110 else 120
+     method peso() = if (self.tanque())1200 else 1350
 
 }
-object kwid{
 
-     var property tanque =false
-
-
-
-     method color() ="Azul"
-     method capacidad() {  if (self.tanque()){return 3} else{return 4}  }
-     method velocidadMaxima() {  if (self.tanque()){return 3} else{return 120}  }
-     method peso() {  if (self.tanque()){return 1350} else{return 1200}  }
-
-}
-object trafic {
+class TRAFIC {
 
      
      var property interior =interiorPopular
