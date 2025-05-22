@@ -1,9 +1,10 @@
-import example.pepita
+import autos.*
+import profe.*
 
-describe "group of tests for pepita" {
+describe "group of tests for autos" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "autos" {
+    assert.equals(kwid.capacidad(),4)
   }
 
 }
