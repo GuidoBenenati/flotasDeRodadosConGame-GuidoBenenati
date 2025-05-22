@@ -1,5 +1,6 @@
 import autos.*
 import profe.*
+import dependencias.*
 
 describe "group of tests for autos" {
 
