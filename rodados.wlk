@@ -1,3 +1,5 @@
+import colores.*
+import dependencias.*
 class CORSA{
 
      var property color ="Azul"
@@ -24,8 +26,8 @@ class KWID{
 class TRAFIC {
 
      
-     var property interior =interiorPopular
-     var property motor =motorBataton
+     var property interior 
+     var property motor 
 
 
 
@@ -36,12 +38,12 @@ class TRAFIC {
      
 }
 
-object especial
+class ESPECIAL
 {
-    var property capacidad =null 
-    var property velocidadMaxima =null 
-    var property peso =null 
-    var property color =null 
+    var property capacidad 
+    var property velocidadMaxima 
+    var  property peso 
+    var property color 
 
 }
 

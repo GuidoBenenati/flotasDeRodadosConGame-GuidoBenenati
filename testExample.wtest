@@ -1,11 +1,41 @@
-import autos.*
-import profe.*
+import rodados.*
+import colores.*
 import dependencias.*
 
-describe "group of tests for autos" {
+describe "group of tests for pepita" {
 
-  test "autos" {
-    assert.equals(kwid.capacidad(),4)
+  test "uno" {
+    var deportes =new DEPENDENCIA(cantidadEmpleados=45)
+    var cultura  =new DEPENDENCIA(cantidadEmpleados=31)
+    var cachito =new CORSA(color=rojo)
+    var auto1=new CORSA(color=azul)
+    var auto2=new CORSA(color=verde)
+    var auto3=new KWID(tanque=true)
+    var auto4=new ESPECIAL (capacidad=5,velocidadMaxima=160,peso=1200,color=beige)
+    deportes.agregarAFlota(cachito)
+    deportes.agregarAFlota(auto1)
+    deportes.agregarAFlota(auto2)
+    deportes.agregarAFlota(auto3)
+    deportes.agregarAFlota(auto4)
+    var auto5=new KWID(tanque=true)
+    var auto6=new KWID(tanque=true)
+    var auto7=new TRAFIC(interior=interiorPopular,motor=motorBataton)
+    cultura.agregarAFlota(auto5)
+    cultura.agregarAFlota(auto6)
+    cultura.agregarAFlota(auto7)
+
+    cultura.agregarAFlota(auto4)
+    
+
+
+
+
+
+
+    assert.equals(cultura.cantidadEmpleados(), deportes.cantidadEmpleados())
+
+
+
   }
 
 }

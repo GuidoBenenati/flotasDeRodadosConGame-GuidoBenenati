@@ -5,3 +5,4 @@ object negro{}
 object blanco{}
 object verde{}
 object naranja{}
+object beige{}
